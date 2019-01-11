@@ -1,0 +1,343 @@
+@import "../base/variables";
+
+%user-select {
+  //-webkit-user-select:none;
+}
+
+%relative {
+  position: relative;
+}
+
+%static {
+  position: static;
+}
+
+%sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+%left {
+  float: left;
+}
+
+%absolute {
+  position: absolute;
+}
+
+%fixed {
+  position: fixed;
+}
+
+%block {
+  display: block;
+}
+
+%inline-block {
+  display: inline-block;
+}
+
+%table {
+  display: table;
+}
+
+%table-cell {
+  display: table-cell;
+}
+
+%none {
+  display: none;
+}
+
+%right {
+  float: right;
+}
+
+%content {
+  content: '';
+  @extend %block;
+}
+
+%box {
+  display: box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: -o-box;
+}
+
+%clearfix {
+  clear: both;
+  &:before, &:after {
+    @extend %content;
+    height: 0;
+    clear: both;
+  }
+}
+
+%fs12{
+  font-size:12px;
+}
+
+%fs14{
+  font-size:14px;
+}
+
+%fs16{
+  font-size:16px;
+}
+
+%fs18{
+  font-size:18px;
+}
+
+%fs20{
+  font-size:20px;
+}
+
+%fs22{
+  font-size:22px;
+}
+
+%fs24{
+  font-size:24px;
+}
+
+%fs26{
+  font-size:26px;
+}
+
+%fs28{
+  font-size:28px;
+}
+
+%fs30{
+  font-size:30px
+}
+
+%fs32{
+  font-size:32px;
+}
+
+%fs34{
+  font-size:34px;
+}
+
+%fs36{
+  font-size:36px;
+}
+
+%fs44{
+  font-size:44px;
+}
+
+%fs48{
+  font-size:48px;
+}
+
+%fs60{
+  font-size:60px;
+}
+
+%fwb{
+  font-weight:bold;
+}
+
+%fwn{
+  font-weight:normal;
+}
+
+%fsn{
+  font-style:normal;
+}
+
+%vam{
+  vertical-align:middle;
+}
+
+%width100{
+  width:100%;
+}
+
+%height100{
+  height:100%;
+}
+
+%round{
+  border-radius:100%;
+}
+
+%tl{
+  text-align:left;
+}
+
+%tc{
+  text-align:center;
+}
+
+%tr{
+  text-align:right;
+}
+
+%left{
+  float:left;
+}
+
+%right{
+  float:right;
+}
+
+%relative{
+  position: relative;
+}
+
+%absolute{
+  position: absolute;
+}
+
+%fixed{
+  position: fixed;
+}
+
+%block{
+  display: block;
+}
+
+%inline-block{
+  display: inline-block;
+}
+
+%none{
+  display: none;
+}
+
+%table{
+  display: table;
+}
+
+%table-cell{
+  display: table-cell;
+}
+
+%transition{
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+%clearfix{
+  clear: both;
+  &:before,&:after{
+    display: block;
+    height: 0;
+    clear: both;
+    content: "";
+  }
+}
+
+%lineTextHide{
+  white-space:nowrap;
+  -o-text-overflow:ellipsis;
+  text-overflow:ellipsis;
+  overflow:hidden;
+}
+
+%borderBox{
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+%box{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+}
+
+%flexAuto{
+  width: 0;
+  -moz-box-flex:1;
+  -webkit-box-flex:1;
+  box-flex:1;
+}
+
+%boxCenter{
+  @extend %box;
+  -webkit-box-align:center;
+  -moz-box-align:center;
+  -ms-box-align:center;
+  box-align:center;
+  -webkit-box-pack:center;
+  -moz-box-pack:center;
+  -ms-box-pack:center;
+  box-pack:center;
+}
+
+%levelAutoCenter{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+%center{
+  @extend %absolute;
+  top:50%;
+  left:50%;
+  -webkit-transform:translate3d(-50%,-50%,0);
+  -moz-transform:translate3d(-50%,-50%,0);
+  transform:translate3d(-50%,-50%,0);
+}
+
+%fixedModal{
+  @extend %fixed;
+  top:0;
+  left:0;
+  @extend %width100;
+  @extend %height100;
+  z-index:99;
+}
+
+%fixedMaskModal{
+  @extend %fixed;
+  top:0;
+  left:0;
+  @extend %width100;
+  @extend %height100;
+  background:rgba(0,0,0,0.75);
+  z-index:99;
+}
+
+%translate3d{
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+%translateXhalf{
+  -webkit-transform:translate(-50%,0);
+  -moz-transform:translate(-50%,0);
+  transform:translate(-50%,0);
+}
+
+%translateYhalf{
+  -webkit-transform:translate(0,-50%);
+  -moz-transform:translate(0,-50%);
+  transform:translate(0,-50%);
+}
+
+%translateHalf{
+  -webkit-transform:translate(-50%,-50%);
+  -moz-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+}
+
+%rotateNav45{
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}
+
+%rotate45{
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  transform:rotate(45deg);
+}

@@ -1,0 +1,251 @@
+@import "extend";
+
+@mixin sprite($x,$y) {
+  background: url( $img_dir + "sprite.png") $x $y no-repeat;
+}
+
+@mixin icon-sprite($x:0,$y:0) {
+  background: url( $img_dir + "icon-sprite.png") $x $y no-repeat;
+}
+
+@mixin translate3d($var1:-50%,$var2:-50%,$var3:0){
+  transform: translate3d($var1,$var2,$var3);
+  -webkit-transform: translate3d($var1,$var2,$var3);
+  -moz-transform: translate3d($var1,$var2,$var3);
+  -ms-transform: translate3d($var1,$var2,$var3);
+  -o-transform: translate3d($var1,$var2,$var3);
+  transform: translate3d($var1,$var2,$var3);
+}
+
+@mixin translate($var1:-50%,$var2:-50%){
+  transform: translate($var1,$var2);
+  -webkit-transform: translate($var1,$var2);
+  -moz-transform: translate($var1,$var2);
+  -ms-transform: translate($var1,$var2);
+  -o-transform: translate($var1,$var2);
+  transform: translate($var1,$var2);
+}
+
+@mixin box-align($var:center){
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  -o-box-align: center;
+  box-align: center;
+}
+
+@mixin box-flex($var:1){
+  box-flex:$var;
+  -webkit-box-flex:$var;
+  -moz-box-flex:$var;
+  -ms-box-flex:$var;
+  -o-box-flex:$var;
+}
+
+@mixin border-radius($var:50%){
+  border-radius: $var;
+  -webkit-border-radius: $var;
+  -moz-border-radius: $var;
+  -o-border-radius: $var;
+  -ms-border-radius: $var;
+}
+
+@mixin transition($var:all,$var2:1,$var3:linear,$var4:0){
+  -webkit-transition: $var $var2+s $var3 $var4+s ;
+  -moz-transition: $var $var2+s $var3 $var4+s ;
+  -ms-transition: $var $var2+s $var3 $var4+s;
+  -o-transition: $var $var2+s $var3 $var4+s;
+  transition: $var $var2+s $var3 $var4+s;
+}
+
+@mixin transition-self($var:all,$var2:1,$var3:linear,$var4:0){
+  -webkit-transition: $var $var2+s $var3 $var4+s ;
+  -moz-transition: $var $var2+s $var3 $var4+s ;
+  -ms-transition: $var $var2+s $var3 $var4+s;
+  -o-transition: $var $var2+s $var3 $var4+s;
+  transition: $var $var2+s $var3 $var4+s;
+}
+
+@mixin rotate($var:90deg){
+  -webkit-transform:rotate($var);
+  -moz-transform:rotate($var);
+  -ms-transform:rotate($var);
+  -o-transform:rotate($var);
+  transform:rotate($var);
+}
+
+@mixin center($width,$height){
+  width:$width ;
+  height: $height;
+  margin-left:-($width/2);
+  margin-top:-($height/2);
+  @extend %absolute;
+  top:50%;
+  left:50%;
+}
+
+@mixin text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+@mixin text-oveflow-line($var){
+  display: -webkit-box;
+  -webkit-line-clamp: $var;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+//
+
+
+
+@mixin linearGradient($var1,$var2,$var3) {
+  background: -webkit-linear-gradient($var1, $var2, $var3); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient($var1, $var2, $var3); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient($var1, $var2, $var3); /* Firefox 3.6 - 15 */
+  background: linear-gradient($var1, $var2, $var3); /* 标准的语法 */
+}
+
+@mixin lineTextHide($var:1rem) {
+  max-width: $var;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@mixin multilineTextHide($var:3) {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-line-clamp: $var;
+  -webkit-box-orient: vertical;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@mixin transition($var:all,$var2:1,$var3:linear,$var4:0) {
+  -webkit-transition: $var $var2+s $var3 $var4+s;
+  -moz-transition: $var $var2+s $var3 $var4+s;
+  -ms-transition: $var $var2+s $var3 $var4+s;
+  -o-transition: $var $var2+s $var3 $var4+s;
+  transition: $var $var2+s $var3 $var4+s;
+}
+
+@mixin animation($var1:all,$var2:1,$var3:linear,$var4:0,$var5:both) {
+  -webkit-animation: $var1 $var2+s $var3 $var4+s $var5;
+  -moz-animation: $var1 $var2+s $var3 $var4+s $var5;
+  -ms-animation: $var1 $var2+s $var3 $var4+s $var5;
+  -o-animation: $var1 $var2+s $var3 $var4+s $var5;
+  animation: $var1 $var2+s $var3 $var4+s $var5;
+}
+
+@mixin translate3d($var1:0,$var2:0,$var3:0) {
+  -webkit-transform: translate3d($var1, $var2, $var3);
+  -moz-transform: translate3d($var1, $var2, $var3);
+  -ms-transform: translate3d($var1, $var2, $var3);
+  -o-transform: translate3d($var1, $var2, $var3);
+  transform: translate3d($var1, $var2, $var3);
+}
+
+@mixin rotate($var:90deg) {
+  -webkit-transform: rotate($var);
+  -moz-transform: rotate($var);
+  -ms-transform: rotate($var);
+  -o-transform: rotate($var);
+  transform: rotate($var);
+}
+
+@mixin round($var:0.5rem) {
+  border-radius: $var;
+}
+
+@mixin absoluteCenter($val:width,$key:height) {
+  width: $val;
+  height: $key;
+  @extend %absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -($val/2);
+  margin-top: -($key/2);
+}
+
+@mixin stroke($var1:#feec0a,$var2:1px,$var3:1px,$var4:1px) {
+  -webkit-text-shadow: $var1 $var2 $var3 $var4;
+  -moz-text-shadow: $var1 $var2 $var3 $var4;
+  text-shadow: $var1 $var2 $var3 $var4;
+}
+
+/*向上三角形*/
+@mixin triangle-up($var1:10px,$var2:10px,$var3:10px,$var4:#fff) {
+  width: 0;
+  height: 0;
+  border-left: $var1 solid transparent;
+  border-right: $var2 solid transparent;
+  border-bottom: $var3 solid $var4;
+}
+
+/*向下三角形*/
+@mixin triangle-down($var1:10px,$var2:10px,$var3:10px,$var4:#fff) {
+  width: 0;
+  height: 0;
+  border-left: $var1 solid transparent;
+  border-right: $var2 solid transparent;
+  border-top: $var3 solid $var4;
+}
+
+/*向左三角形*/
+@mixin triangle-left($var1:10px,$var2:10px,$var3:10px,$var4:#fff) {
+  width: 0;
+  height: 0;
+  border-top: $var1 solid transparent;
+  border-bottom: $var2 solid transparent;
+  border-right: $var3 solid $var4;
+}
+
+/*向右三角形*/
+@mixin triangle-right($var1:10px,$var2:10px,$var3:10px,$var4:#fff) {
+  width: 0;
+  height: 0;
+  border-top: $var1 solid transparent;
+  border-bottom: $var2 solid transparent;
+  border-left: $var3 solid $var4;
+}
+
+/*左上三角形*/
+@mixin triangle-topleft($var1:10px,$var2:10px,$var3:#f00) {
+  width: 0;
+  height: 0;
+  border-top: $var1 solid $var3;
+  border-right: $var2 solid transparent;
+}
+
+/*右上三角形*/
+@mixin triangle-topright($var1:10px,$var2:10px,$var3:#f00) {
+  width: 0;
+  height: 0;
+  border-top: $var1 solid $var3;
+  border-left: $var2 solid transparent;
+}
+
+/*左下三角形*/
+@mixin triangle-bottomleft($var1:10px,$var2:10px,$var3:#f00) {
+  width: 0;
+  height: 0;
+  border-bottom: $var1 solid $var3;
+  border-right: $var2 solid transparent;
+}
+
+/*右下三角形*/
+@mixin triangle-bottomright($var1:10px,$var2:10px,$var3:#f00) {
+  width: 0;
+  height: 0;
+  border-bottom: $var1 solid $var3;
+  border-left: $var2 solid transparent;
+}

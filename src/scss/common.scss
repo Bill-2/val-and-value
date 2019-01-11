@@ -1,0 +1,143 @@
+@import "base/reset";
+//重置样式
+@import "utils/include";
+//宏（内部引用占位符）
+@import "components/media";
+//宏（内部引用占位符）
+@import "components/tools";
+//工具（间距，文字大小）
+@import "components/icons";
+//图片
+@import "components/btn";
+//按钮
+@import "components/text";
+//文字模块
+@import "components/banner-words";
+//banner文字模块
+@import "modules/header";
+//头部
+@import "modules/footer";
+//底部
+@import "components/table";
+
+@font-face {
+  font-family: "Akkurat-Light";
+  src:url("../fonts/fonts/lineto-akkurat-light.eot");
+  src:url("../fonts/fonts/lineto-akkurat-light.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/fonts/lineto-akkurat-light.woff2") format("woff2"),
+  url("../fonts/fonts/lineto-akkurat-light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Akkurat-Regular";
+  src:url("../fonts/fonts/lineto-akkurat-regular.eot");
+  src:url("../fonts/fonts/lineto-akkurat-regular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/fonts/lineto-akkurat-regular.woff2") format("woff2"),
+  url("../fonts/fonts/lineto-akkurat-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Akkurat-Lightitalic";
+  src:url("../fonts/fonts/lineto-akkurat-lightitalic.eot");
+  src:url("../fonts/fonts/lineto-akkurat-lightitalic.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/fonts/lineto-akkurat-lightitalic.woff2") format("woff2"),
+  url("../fonts/fonts/lineto-akkurat-lightitalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Akkurat-Italic";
+  src:url("../fonts/fonts/lineto-akkurat-italic.eot");
+  src:url("../fonts/fonts/lineto-akkurat-italic.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/fonts/lineto-akkurat-italic.woff2") format("woff2"),
+  url("../fonts/fonts/lineto-akkurat-italic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Akkurat-Bold";
+  src:url("../fonts/fonts/lineto-akkurat-bold.eot");
+  src:url("../fonts/fonts/lineto-akkurat-bold.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/fonts/lineto-akkurat-bold.woff2") format("woff2"),
+  url("../fonts/fonts/lineto-akkurat-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Akkurat-Bolditalic";
+  src:url("../fonts/fonts/lineto-akkurat-bolditalic.eot");
+  src:url("../fonts/fonts/lineto-akkurat-bolditalic.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/fonts/lineto-akkurat-bolditalic.woff2") format("woff2"),
+  url("../fonts/fonts/lineto-akkurat-bolditalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Subsetted */
+@font-face {
+  font-family: "Akkurat-Light-S";
+  src:url("../fonts/fonts_subsetted/lineto-akkurat-light.eot");
+  src:url("../fonts/fonts_subsetted/lineto-akkurat-light.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/fonts_subsetted/lineto-akkurat-light.woff2") format("woff2"),
+  url("../fonts/fonts_subsetted/lineto-akkurat-light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Akkurat-Regular-S";
+  src:url("../fonts/fonts_subsetted/lineto-akkurat-regular.eot");
+  src:url("../fonts/fonts_subsetted/lineto-akkurat-regular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/fonts_subsetted/lineto-akkurat-regular.woff2") format("woff2"),
+  url("../fonts/fonts_subsetted/lineto-akkurat-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Akkurat-Lightitalic-S";
+  src:url("../fonts/fonts_subsetted/lineto-akkurat-lightitalic.eot");
+  src:url("../fonts/fonts_subsetted/lineto-akkurat-lightitalic.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/fonts_subsetted/lineto-akkurat-lightitalic.woff2") format("woff2"),
+  url("../fonts/fonts_subsetted/lineto-akkurat-lightitalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Akkurat-Italic-S";
+  src:url("../fonts/fonts_subsetted/lineto-akkurat-italic.eot");
+  src:url("../fonts/fonts_subsetted/lineto-akkurat-italic.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/fonts_subsetted/lineto-akkurat-italic.woff2") format("woff2"),
+  url("../fonts/fonts_subsetted/lineto-akkurat-italic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Akkurat-Bold-S";
+  src:url("../fonts/fonts_subsetted/lineto-akkurat-bold.eot");
+  src:url("../fonts/fonts_subsetted/lineto-akkurat-bold.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/fonts_subsetted/lineto-akkurat-bold.woff2") format("woff2"),
+  url("../fonts/fonts_subsetted/lineto-akkurat-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Akkurat-Bolditalic-S";
+  src:url("../fonts/fonts_subsetted/lineto-akkurat-bolditalic.eot");
+  src:url("../fonts/fonts_subsetted/lineto-akkurat-bolditalic.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/fonts_subsetted/lineto-akkurat-bolditalic.woff2") format("woff2"),
+  url("../fonts/fonts_subsetted/lineto-akkurat-bolditalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

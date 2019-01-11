@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+//========================================================================== 
+// reset scss
+// non-interactive version
+//==========================================================================
+
+/**
+ * remove gap
+ */
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,p,td,th,ul,ol,form,header,section,article,footer{margin:0;padding: 0};
+
+/**
+ * add default font-style
+ */
+body,button,input,select,textarea{font:12px/1.5 tahoma,'\5FAE\8F6F\96C5\9ED1',sans-serif}
+
+/**
+ * add default from h1 to h6
+ */
+h1,h2,h3,h4,h5,h6{font-size:100%}
+
+/**
+ * add default font-style
+ */
+em,b{font-style:normal}
+
+/**
+ * remove outline
+ */
+a{text-decoration:none} 
+
+/**
+ * remove images border
+ */
+img{border:0} 
+
+/**
+ * add font-style and remove outline
+ */
+button,input,select,textarea{font-size:100%;outline:none}
+
+/**
+ * add table style
+ */
+table{border-collapse:collapse;border-spacing:0}
+

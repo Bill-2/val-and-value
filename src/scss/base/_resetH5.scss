@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+//========================================================================== 
+// reset scss
+// non-interactive version
+//==========================================================================
+
+/**
+ * remove gap
+ */
+html,body,div,p,ul,li,dl,dt,dd,em,i,span,a,img,input,h1,h2,h3,h4,h5 {margin:0;padding:0}
+
+/**
+ * remove outline
+ */
+a,img,input {border:none;}
+
+
+/**
+ * add default font-style
+ */
+body{font: 14px/1.75  -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;-webkit-tap-highlight-color: rgba(0,0,0,0);}
+
+/**
+ * remove outline
+ */
+a {text-decoration:none;}
+
+/**
+ * remove li style
+ */
+ul,li{list-style: none}
+
+/**
+ * remove the images appear when the finger long touch 
+ */
+a, img {-webkit-touch-callout: none; /* 禁止长按链接与图片弹出菜单 */}
